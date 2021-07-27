@@ -550,18 +550,6 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Services</h2>
-            <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-            </ul>
-          </div>
-        </div> -->
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Have a Question?</h2>
@@ -570,6 +558,27 @@
                 <li><a href="tel:+917798066001"><span class="icon icon-phone"></span><span class="text">+91 7798066001</span></a></li>
                 <li><a href="mailto:dhruvilshah077@gmail.com"><span class="icon icon-envelope"></span><span class="text">dhruvilshah077@gmail.com</span></a></li>
               </ul>
+              <section>
+                <div class="container">
+                  <form action="https://formspree.io/f/xbjqzjlz" method="POST" id="my-form">
+
+                    <div class="form-group">
+                      <input type="text" id="firstName" name="firstName" size="45" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" id="email" name="email" size="45" placeholder="Email-Id">
+                    </div>
+
+                    <div class="form-group">
+                      <textarea name="massage" id="massage" cols="49" rows="10" placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-light" style="font-size: 16px" onclick="submitForm()">Submit</button>
+                  </form>
+                </div>
+                <div id="status"></div>
+              </section>
             </div>
           </div>
         </div>
@@ -601,7 +610,11 @@
   <script src="js/scrollax.min.js"></script>
 
   <script src="js/main.js"></script>
-
+  <script>
+    function submitForm() {
+      document.getElementById("my-form").reset();
+    }
+  </script>
 </body>
 
 </html>
